@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-
+   
   <meta charset="UTF-8" />
-
+   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>نظام الحضور والغياب (تلقائي ومحلي)</title>
-  
-<script src="https://cdn.tailwindcss.com"></script>
-  
+    <title>نظام الحضور والغياب (تلقائي ومحلي)</title>
+   
+  <script src="https://cdn.tailwindcss.com"></script>
+   
   <script src="https://unpkg.com/html5-qrcode"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <style>
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
 
     body {
@@ -239,7 +240,7 @@
     function sendAttendance(site, lat, lon) {
       // ❌ تم إزالة كود Swal.fire() من هنا
 
-      fetch("https://script.google.com/macros/s/AKfycbx8FNf2w55fuzko6Pd3o2O__jEyFqf84GFeL4K4N0v4_PKg26vGUqNlT65r7ikW3YSe/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzFIPEgOMXah-nJXbCNiTCqgqkqLy3BcbqbMYhh3qXOT2Bo1TbW1v4JCb4fF8wtGv9W/exec", {
         method: "POST",
         body: JSON.stringify({
           employeeName: currentEmployeeName,
